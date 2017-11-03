@@ -1,0 +1,10 @@
+{
+  "name": "aula-univem",
+  "flat": true,
+  "version": "1.0.0",
+  "description": "Web components, Polymer",
+  "main": "index.js",
+  "repository": "https://github.com/luanpontolio/aula-univem-webcomponents.git",
+  "author": "Luan Pontolio <luan.pontolio@gmail.com>",
+  "license": "MIT"
+}
