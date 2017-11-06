@@ -20,7 +20,7 @@ module.exports = {
     },
 
     {
-      "urlPattern": /^https:\/\/prpl-ce-firebase\.firebaseapp\.com\/images\//,
+      "urlPattern": /^https:\/\/webcomponents-ffb5e\.firebaseapp\.com\/images\//,
       "handler": "cacheFirst",
       "options": {
         "cacheableResponse": {
