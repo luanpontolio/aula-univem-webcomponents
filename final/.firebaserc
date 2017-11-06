@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "webcomponents-ffb5e"
+    "default": "webcomponents-ffb5e",
+    "staging": "webcomponents-ffb5e"
   }
 }

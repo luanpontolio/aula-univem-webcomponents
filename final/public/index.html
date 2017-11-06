@@ -20,13 +20,12 @@
     <list-view></list-view>
     <detail-view></detail-view>
   </my-app>
-
   <script>
-    window.addEventListener('WebComponentsReady', function() {
-      var MyApp = customElements.get('my-app');
-      var element = document.querySelector('my-app');
-      console.assert(element instanceof MyApp);
-    });
+    if ('serviceWorker' in window.navigator) {
+      window.addEventListener('load', function() {
+        window.navigator.serviceWorker.register('/sw.js')
+      });
+    }
   </script>
 </body>
 </html>
