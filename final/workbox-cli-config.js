@@ -23,6 +23,8 @@ module.exports = {
       "urlPattern": /^https:\/\/webcomponents-ffb5e\.firebaseapp\.com\/images\//,
       "handler": "cacheFirst",
       "options": {
+        "cacheName": "images",
+        "cacheExpiration": { maxEntries: 20 },
         "cacheableResponse": {
           "statuses": [0, 200]
         }

@@ -135,6 +135,10 @@ const workboxSW = new self.WorkboxSW({
 workboxSW.precache(fileManifest);
 workboxSW.router.registerNavigationRoute("index.html");workboxSW.router.registerRoute('/data/*', workboxSW.strategies.networkFirst({}), 'GET');
 workboxSW.router.registerRoute(/^https:\/\/webcomponents-ffb5e\.firebaseapp\.com\/images\//, workboxSW.strategies.cacheFirst({
+  "cacheName": "images",
+  "cacheExpiration": {
+    "maxEntries": 20
+  },
   "cacheableResponse": {
     "statuses": [
       0,
